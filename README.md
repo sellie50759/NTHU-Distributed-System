@@ -63,4 +63,14 @@ The CI/CD runs in [Github Actions](https://github.com/features/actions). See the
 ![image](https://github.com/sellie50759/NTHU-Distributed-System/assets/81401079/400e0ce1-764a-49e1-91fe-85616ee6dd9d)
 ![image](https://github.com/sellie50759/NTHU-Distributed-System/assets/81401079/31c6941d-38f2-4417-a654-5efdefe49716)
 
+## Encounter problem
+
+Dockerfile base need to change to gcr.io/distroless/base-debian12, otherwise it will cause 
+```
+/cmd: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.32' not found (required by /cmd)
+/cmd: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by /cmd)
+```
+![image](https://github.com/sellie50759/NTHU-Distributed-System/assets/81401079/ac7dbc06-c3db-4bde-bf98-52b4053b4231)
+
+
 
